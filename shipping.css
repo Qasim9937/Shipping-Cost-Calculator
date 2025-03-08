@@ -1,0 +1,278 @@
+  :root{
+    --accent-color: #1a8f98;
+    --form-bg-color: #f1f1f1;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    position: relative;
+    background-color: white; 
+    padding-bottom: 20px; 
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 21.5px;
+    z-index: 1000;
+    background-color: white;
+    width: 100%;
+    margin: 10px auto;
+    border-radius: 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#logo{
+    width: 188px
+}
+
+#navbar, #contact-us{
+    display: none;
+}
+
+#section1{
+    width: 100%;
+    margin: 80px auto 0;
+}
+
+#buttons{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 30px auto;
+    font-size: 16px;
+    width: 90%;
+}
+
+#buttons p{
+    cursor: pointer;
+}
+
+#buttons p:first-of-type{
+    color: var(--accent-color);
+}
+
+#main-title{
+    background-color: var(--accent-color);
+    margin: 0 auto 30px;
+    width: 280px;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    margin: auto;
+}
+
+#form1, #form2{
+    background-color: var(--form-bg-color);
+    display: block;
+    flex-direction: column;
+    padding: 25px;
+    width: 100%;
+    margin: 30px auto 40px;
+    border-radius: 10px;
+}
+
+#form1 input{
+    width: 120px;
+    height: 50px;
+    border: 0.5px solid gray;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 18px;
+    outline-color: var(--accent-color);
+}
+
+
+
+
+
+#calculate1{
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+#form1-output{
+    width: 310px;
+    display: flex; 
+    align-items: center; 
+    gap: 5px;
+    font-size: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+
+
+}
+
+#m{
+    font-size: 16px;
+}
+
+#form1 #result1{
+    border: 1.5px solid var(--accent-color);
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+#form2{
+    display: none;
+}
+
+
+#form2 input{
+    display: block;
+    width: 100%;
+    margin: 12px auto;
+    height: 55px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    outline-color: var(--accent-color);
+    font-size: 18px;
+}
+
+#form2 #calculate2{
+    background-color: var(--accent-color);
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 150px;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 10px;
+    outline: none;
+    margin: 10px auto 20px; 
+    transition: background-color .1s ease-in;
+}
+
+#form2 #calculate2:hover{
+    background-color: orange;
+    color: black;
+
+}
+
+#result-div{
+    display: none;
+    background-color: var(--form-bg-color);
+    width: 100%;
+    padding: 30px 10px 50px;
+    margin-bottom: 30px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#results-heading{
+    color: var(--accent-color);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#result-div p{
+    margin: 20px;
+    font-size: 16px;
+}
+
+@media only screen and (min-width: 1023px){
+
+    header{
+        width: 80vw;
+        justify-content: space-between;  
+        border: 1px solid var(--form-bg-color);  
+        box-shadow: 0 0 5px var(--form-bg-color);
+        border: 1px solid var(--form-bg-color);
+        margin: unset;
+        margin: 30px auto 0;
+    }
+
+    #navbar, #contact-us{
+        display: flex;
+        gap: 40px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #contact-us{
+        background-color: orange;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    #nav-links{
+        display: flex;
+        border: 2px solid red;
+        gap: 20px
+    }
+
+    #navbar a{text-decoration: none;
+        color: black;
+    }
+
+    #menu-icon{
+        display: none;
+    }
+
+    #buttons{
+        justify-content: center;
+        gap: 60px;
+        font-size: 20px;
+        margin: 60px auto 20px;
+    }
+
+    #main-title{
+        font-size: 20px;
+        width: 400px;
+        margin-bottom: 80px
+    }
+
+    #form-container{
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        padding: unset
+     }
+
+    #form1, #form2{
+        width: 700px;
+        margin: unset
+    }
+
+    #result-div{
+        width: 350px;
+        margin: unset
+    }
+}

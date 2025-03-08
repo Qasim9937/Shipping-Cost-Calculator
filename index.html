@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Tools</title>
+    <link rel="stylesheet" href="shipping.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
+<body>
+    <header>
+        <img src="logo.cd5897af.png" id="logo" alt="logo" loading="lazy">
+        <span class="material-icons" id="menu-icon" style="font-size: 30px;">
+            menu
+        </span>
+        <nav id="navbar">
+                <a href="#">About us</a>
+                <a href="#">Services</a>
+                <a href="#">Shipping tools</a>
+                <a href="#">Blog</a>
+                <a href="#">Rate</a>
+        </nav>
+        <button id="contact-us">Contact Us</button>
+    </header>
+    <main>
+        <section id="section1">
+            <div id="buttons">
+                <p id="cbm">CBM Calculator</p>
+                <p id="landing-price">Landing Price Calculator</p>
+            </div>
+
+            <div id="main-title">Cubic meter Calculator</div>
+
+        <div id="form-container">
+            <form id="form1">
+                <input type="number" step="any" placeholder="Length" id="length"><label for="length">cm</label><br>
+                <input type="number" step="any" placeholder="Width" id="width"><label for="width">cm</label><br>
+                <input type="number" step="any" placeholder="Height" id="height"><label for="height">cm</label><br>
+
+                <div id="form1-output">
+                    <button id="calculate1">=</button>
+                    <input type="text" placeholder="?" disabled id="result1"><p><span id="m">m<sup>3</sup></span>(Cubic meters)</p>
+                </div>
+            </form>
+
+            <form id="form2">
+                <label for="price">Price of Goods (₦)</label>
+                <input type="number" step="any" placeholder="Price of Goods" id="price" required>
+
+                <label for="weight">Weight (Kg)</label>
+                <input type="number" step="any" placeholder="Weight" id="weight" required>
+
+                <label for="shipping-fee">Shipping Fee ($)</label>
+                <input type="number" placeholder="Shipping Fee" id="shipping-fee" required>
+
+                <label for="clearing-fee">Clearing Fee (₦)</label>
+                <input type="number" placeholder="Clearing Fee" id="clearing-fee" required>
+
+                <label for="exchange-rate">Exchange Rate</label>
+                <input type="number" step="any" placeholder="Exchange Rate" id="exchange-rate" required>
+                <button id="calculate2">Calculate</button>
+            </form>
+
+            <div id="result-div"></div>
+
+        </div>
+
+        </section>
+    </main>
+
+
+
+
+
+
+
+    <script src="shipping.js"></script>
+</body>
+</html>
